@@ -1,4 +1,3 @@
-
 //===============Q1=============
 let user = {};
 
@@ -80,3 +79,16 @@ delete user.country;
 
 console.log(user.country);
 console.log(user.bbf);
+
+//===============Q6=============
+
+user.toString = function () {
+    return this.name;
+};
+
+/*user.valueOf = function () {
+    return this.age;
+};*/
+
+console.log('His name is ' + user);
+console.log(user * 2);
